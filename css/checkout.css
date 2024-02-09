@@ -1,0 +1,39 @@
+
+#background_img {
+    width: 100%;
+}
+
+#desc_checkout {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	overflow: visible;
+	margin: 10%;
+	margin-top: 0;
+}
+
+#desc {
+	flex-grow: 1;
+}
+
+#checkout {
+	flex-shrink: 0;
+	/* sticky positioning: https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 */
+	position: sticky;
+	top: 30%;
+}
+
+@media (max-width: 48rem) {
+	#desc_checkout {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	#desc {
+		flex-grow: 0;
+		order: 1;
+	}
+	#checkout {
+		position: static;
+		order: 0;
+	}
+}

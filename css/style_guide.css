@@ -1,0 +1,20 @@
+
+/* flexbox guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+#swatches {
+	border-radius: 0.5rem;
+	display: flex;
+}
+.swatch {
+	flex-grow: 1;
+	padding: 0.5em;
+}
+
+code {
+	display: block;
+}
+
+.add_margin {
+	padding: calc(50% - 22rem);
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
