@@ -1,0 +1,23 @@
+
+.title {
+	text-align: center;
+	font-size: 4em;
+
+	/* Neumorphism css: https://neumorphism.io/#e0e0e0 */
+	border: none;
+	color: #e0e0e0;
+	text-shadow:  3px 3px 6px #bebebe,
+             -3px -3px 6px #ffffff;
+}
+
+.catalog {
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: center;
+    align-items: baseline;
+}
+
+.catalog > div {
+    flex-basis: 25em;
+    flex-grow: 1;
+}
