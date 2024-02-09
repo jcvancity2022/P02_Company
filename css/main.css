@@ -5,10 +5,7 @@ body {
 	margin: 0;
 	background-color: #e0e0e0;
 }
-h2, h3, h4, h5, h6, b {
-	font-family: Bahnschrift;
-}
-h1{
+h1, h2, h3, h4, h5, h6, b {
 	font-family: 'Radio Canada', sans-serif;
 }
 
