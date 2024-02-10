@@ -439,23 +439,31 @@
 			<h4>Rendered Element:</h4>
 
 			<div class="glass pane">
-				<h3>Donate!</h3>
-	
-				<input type="radio" id="radio1" name="radioButtons">
-				<label for="radio1">Daily</label>
-				<br>
-				<input type="radio" id="radio2" name="radioButtons">
-				<label for="radio2">Weekly</label>
-				<br>
-				<input type="radio" id="radio3" name="radioButtons">
-				<label for="radio3">Monthly</label>
-				<br>
-				<input type="radio" id="radio4" name="radioButtons">
-				<label for="radio4">Anually</label>
-				<br>
-				<br>
-				<input type="text" placeholder="amount">
-				<input type="submit" value="Donate!">
+            <label for="cardName">Name on Card:</label>
+            <input type="text" id="cardName" name="cardName" required>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{16}" required>
+
+            <label for="cardExp">Expiry Date:</label>
+            <input type="text" id="cardExp" name="cardExp" placeholder="MM/YY" pattern="\d{2}/\d{2}" required>
+
+            <label for="cardCVC">CVC:</label>
+            <input type="text" id="cardCVC" name="cardCVC" pattern="\d{3}" required>
+          </div>
+          <fieldset class="form-group">
+            <legend>Billing Address</legend>
+            <label for="billingAddress">Address:</label>
+            <input type="text" id="billingAddress" name="billingAddress" required>
+      
+            <label for="billingCity">City:</label>
+            <input type="text" id="billingCity" name="billingCity" required>
+      
+            <label for="billingZip">ZIP Code:</label>
+            <input type="text" id="billingZip" name="billingZip" required>
+          </fieldset>
+      
+          <button>Pay Now</button>
 			</div>
 
 			<h4>Code:</h4>
