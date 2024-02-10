@@ -72,23 +72,26 @@
 
 			<!-- All the usual required payment form fields, such as card info and billing location should be retrieved from the user's account settings -->
 			<div id="checkout" class="glass pane">
-				<h3>Donate!</h3>
-	
-				<input type="radio" id="radio1" name="radioButtons">
-				<label for="radio1">Daily</label>
-				<br>
-				<input type="radio" id="radio2" name="radioButtons">
-				<label for="radio2">Weekly</label>
-				<br>
-				<input type="radio" id="radio3" name="radioButtons">
-				<label for="radio3">Monthly</label>
-				<br>
-				<input type="radio" id="radio4" name="radioButtons">
-				<label for="radio4">Anually</label>
-				<br>
-				<br>
-				<input type="text" placeholder="amount">
-				<input type="submit" value="Donate!">
+			<table id="checkoutCart" class="checkout-table">
+          <tr>
+            <th>Product Name</th>
+            <th>Cost</th>
+          </tr>
+          <tr>
+            <td>Whistler Blackcomb Ski Pass and Hotel</td>
+            <td>$180</td>
+            
+          </tr>
+          <tr>
+            <td>Lake Louise Ski Pass and Hotel</td>
+            <td>$175</td>
+          </tr>
+          <tr>
+            <th scope="row">Total</th>
+            <th>$355</th>
+          </tr>
+        </table>
+        <button>Checkout</button>
 			</div>
 		</div>
 
