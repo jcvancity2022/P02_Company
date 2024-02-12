@@ -8,7 +8,7 @@
 	justify-content: center;
 	align-items: flex-start;
 	overflow: visible;
-	margin: 10%;
+	margin: 5%;
 	margin-top: 0;
 }
 
@@ -23,7 +23,7 @@
 	top: 30%;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 70rem) {
 	#desc_checkout {
 		flex-direction: column;
 		align-items: stretch;
