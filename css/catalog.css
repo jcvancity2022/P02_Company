@@ -2,10 +2,10 @@
 .title {
 	text-align: center;
 	font-size: 4em;
-
+    font-family: 'Radio Canada', sans-serif;
 	/* Neumorphism css: https://neumorphism.io/#e0e0e0 */
 	border: none;
-	color: #e0e0e0;
+	color: rgb(0, 75, 175);;
 	text-shadow:  3px 3px 6px #bebebe,
              -3px -3px 6px #ffffff;
 }
