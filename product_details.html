@@ -10,6 +10,13 @@
 		<link href="css/style_guide.css" rel="stylesheet">
 		<link href="css/product_details.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+		<script>
+			// Prevent form submission for demonstration
+			function preventFormSubmission(event) {
+				alert('Form submission is currently disabled for demonstration purposes.');
+				event.preventDefault();
+			}
+		</script>
 	</head>
 
 	<body class >
@@ -76,7 +83,7 @@
 			<div id="checkout" class="glass pane">
 				<!-- Availability and booking form -->
 				<h3>Check Availability and Book</h3>
-				<form action="booking-url" method="post">
+				<form onsubmit="preventFormSubmission(event)" method="post">
 					<label for="checkin-date">Check-in:</label>
 					<input type="date" id="checkin-date" name="checkin" required>
 		
@@ -89,7 +96,7 @@
 				</form>	
 				<!-- Review Submission Form -->
 				<h2>Leave a Review</h2>
-				<form id="review-form" action="submit-review-url" method="post">
+				<form onsubmit="preventFormSubmission(event)" method="post">
 					<div class="form-group">
 						<label for="reviewer-name">Your Name:</label>
 						<input type="text" id="reviewer-name" name="reviewer_name" required>
