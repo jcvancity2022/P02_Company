@@ -122,9 +122,44 @@ label {
 }
 
 .crisis_card {
-	max-width: 40em;
-	max-height: 50em;
+	width: 40em;
+	height: 60em;
+	overflow: hidden; /* Ensures the content does not spill outside the card */
+	display: flex;
+	flex-direction: column;
+	margin: 10px; /* Adds space around the cards */
+	border: 1px solid #ddd; /* Optional: Adds a border around the cards */
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+.crisis_card img {
+	width: 30em; /* Makes the image take full width of the card */
+	height: 20em; /* Fixed height for the image */
+	object-fit: cover; /* Ensures the image covers the area, might crop it */
+  }
+  .crisis_card .pane {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* Distributes space between elements inside the pane */
+  }
+  
+  /* Add this class to buttons if not already styled */
+  .crisis_card button {
+	cursor: pointer; /* Changes the cursor to indicate it's clickable */
+	padding: 10px 20px;
+	background-color: #004baf; /* Example button color */
+	color: white;
+	border: none;
+	border-radius: 5px; /* Rounded corners for the button */
+	margin-top: auto; /* Pushes the button to the bottom of the card */
+  }
+  
+  /* Additional styling for the hotel-pricing to ensure the text does not overflow */
+  .hotel-pricing .hotel-price {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
 .crisis_card > a > img, .crisis_card > div > a > button {
 	width: 100%;
 }
