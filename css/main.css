@@ -123,6 +123,7 @@ label {
 
 .crisis_card {
 	max-width: 40em;
+	max-height: 50em;
 }
 .crisis_card > a > img, .crisis_card > div > a > button {
 	width: 100%;
