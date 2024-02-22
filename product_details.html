@@ -46,23 +46,23 @@
 					<p>Experience the unique stay at Pangea Pod Hotel, where modern design and comfort meet together. Each pod is designed with the savvy skier in mind, providing a cozy yet chic place to rest after a day on the slopes.</p>	   
 					<div class="hotel-amenities">
 						<h3>Amenities and Services:</h3>
-						<span class="hotel-amenity">Internet Access</span>
-						<span class="hotel-amenity">Restaurant</span>
-						<span class="hotel-amenity">Room Service</span>
-						<span class="hotel-amenity">Bar</span>
-						<span class="hotel-amenity">Smoke free</span>
-						<span class="hotel-amenity">Smoking Areas</span>
-						<span class="hotel-amenity">24 hour</span>
-						<span class="hotel-amenity">Concierge</span>
-						<span class="hotel-amenity">Dry Cleaning</span>
+						<li>Internet Access</li>
+						<li>Restaurant</li>
+						<li>Room Service</li>
+						<li>Bar</li>
+						<li>Smoke free</li>
+						<li>Smoking Areas</li>
+						<li>24 hour</li>
+						<li>Concierge</li>
+						<li>Dry Cleaning</li>
 					</div>
 					<div class="hotel-pricing">
 						<h3>Pricing:</h3>
-					<p class="hotel-price">CA $197/Night</p>
+						<p class="hotel-price">CA $197/Night</p>
 					</div>
 					<div class="hotel-rating">
 						<h3>Rating:</h3>
-					<p class="hotel-rating-number">10/10</p>
+						<p class="hotel-rating-number">10/10</p>
 					</div>
 
 					<h3>Customer Reviews</h3>
@@ -81,19 +81,21 @@
 
 			<!-- All the usual required payment form fields, such as card info and billing location should be retrieved from the user's account settings -->
 			<div id="checkout" class="glass pane">
-				<!-- Availability and booking form -->
-				<h3>Check Availability and Book</h3>
-				<form onsubmit="preventFormSubmission(event)" method="post">
-					<label for="checkin-date">Check-in:</label>
-					<input type="date" id="checkin-date" name="checkin" required>
-		
-					<label for="checkout-date">Check-out:</label>
-					<input type="date" id="checkout-date" name="checkout" required>
-		
-					<!-- More form fields as necessary -->
-		
-					<input type="submit" value="Check Availability">
-				</form>	
+				<div class="check-availability-container">
+					<!-- Availability and booking form -->
+					<h3>Check Availability and Book</h3>
+					<form onsubmit="preventFormSubmission(event)" method="post">
+						<label for="checkin-date">Check-in:</label>
+						<input type="date" id="checkin-date" name="checkin" required>
+			
+						<label for="checkout-date">Check-out:</label>
+						<input type="date" id="checkout-date" name="checkout" required>
+			
+						<!-- More form fields as necessary -->
+			
+						<input type="submit" value="Check Availability">
+					</form>	
+				</div>
 				<!-- Review Submission Form -->
 				<h2>Leave a Review</h2>
 				<form onsubmit="preventFormSubmission(event)" method="post">
