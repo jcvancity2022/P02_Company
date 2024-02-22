@@ -28,18 +28,26 @@
   /* Add icons or background images for pool and hot tub */
 }
 
-.hotel-pricing {
-  display: inline-block;
 
-  margin-right: 8rem;
-  margin-bottom: 1rem;
+.hotel-pricing,
+.hotel-rating {
+  text-align: left; /* Align text to the left */
+  display: block; /* Each element will take the full width available */
+  margin-right: 0; /* Reset any right margin if present */
 }
 
-.hotel-pricing {
-  display: inline-block;
+/* Additional styling to ensure the container of the hotel price and rating aligns them to the left */
+.pane {
+  display: flex; /* Use flexbox for the layout */
+  flex-direction: column; /* Stack children elements vertically */
+  align-items: flex-start; /* Align children to the start of the cross axis (to the left) */
+}
 
-  margin-right: 8rem;
-  margin-bottom: 1rem;
+/* If you want the price and rating to be inline, you can use the following */
+.hotel-pricing,
+.hotel-rating {
+  display: inline-block; /* Allows elements to sit next to each other */
+  margin-right: 1rem; /* Adds a small margin to the right of each element */
 }
 
 .hotel-price {
@@ -55,20 +63,9 @@
   margin-left: 5px;
 }
 
-.hotel-rating {
-  display: inline;
-  align-items: center;
-}
 
-.hotel-score {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #4caf50; /* Score colour */
-  margin-right: 5px;
-}
 .hotel-rating-number {
   font-size: 1.5rem;
   font-weight: bold;
   color: #4caf50; /* Score colour */
-  margin-left: 5px;
 }
