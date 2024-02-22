@@ -1,15 +1,21 @@
-
 #background_img {
     width: 100%;
 }
 
 #desc_checkout {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between; /* Changed from 'left' to 'space-between' for better spacing */
 	align-items: flex-start;
+	gap: 20px; /* Add space between the elements */
+	margin: 2rem; /* Uniform margin */
+
 	overflow: visible;
-	margin: 10%;
+
 	margin-top: 0;
+}
+
+#desc, #checkout {
+	max-width: 50%; /* Set a maximum width for both sections */
 }
 
 #desc {
@@ -23,17 +29,95 @@
 	top: 30%;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 70rem) {
 	#desc_checkout {
 		flex-direction: column;
 		align-items: stretch;
 	}
-	#desc {
-		flex-grow: 0;
-		order: 1;
+	#desc, #checkout {
+		max-width: 100%; /* Full width for smaller screens */
+		order: 0; /* Reset the order to ensure consistency */
 	}
 	#checkout {
 		position: static;
 		order: 0;
 	}
 }
+
+/* Style for input fields and text areas */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  border: 1px solid black; /* Sets a solid black border with 1px thickness */
+  /* You can add more styles to make the inputs look better */
+  padding: 8px; /* Adds some space inside the input fields */
+  border-radius: 4px; /* Optional: Adds rounded corners to the inputs */
+  margin-bottom: 8px; /* Optional: Adds space below the inputs */
+}
+
+/* Style for buttons */
+button,
+input[type="submit"], input[type="reset"] {
+  border: 1px solid black; /* Sets a solid black border with 1px thickness for buttons */
+  background-color: #f2f2f2; /* Sets the background color of the button */
+  color: black; /* Sets the text color of the button to black */
+  padding: 8px 16px; /* Adds padding inside the button to make it larger */
+  border-radius: 4px; /* Optional: Adds rounded corners to the button */
+  cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the button */
+  transition: background-color 0.3s; /* Optional: Adds a transition effect when the button state changes */
+}
+
+/* Optional: Style for hover state of the button */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #f2f2f2; /* Changes the background color when hovering */
+}
+
+
+/* Container styling for the check availability and book section */
+.check-availability-container {
+	display: flex; /* Use flexbox for layout */
+	flex-direction: column; /* Stack children vertically */
+	max-width: 500px; /* Adjust width to fit content */
+	margin: auto; /* Center the container */
+	padding: 20px; /* Add some padding around the content */
+	border: 1px solid black; /* Add a border to the container */
+	border-radius: 10px; /* Round the corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+  }
+  
+	/* Style for form elements: input, button */
+	.check-availability-container input[type="date"],
+	.check-availability-container button {
+	border: 1px solid black; /* Add borders to form elements */
+	padding: 8px; /* Add padding inside elements */
+	border-radius: 4px; /* Optionally round the corners */
+	}
+
+	/* Add space between Check-in and Check-out fields */
+	.check-availability-container input[type="date"] {
+		margin-bottom: 16px; /* Add space below the Check-in field */
+	}
+
+	/* Style for the button specifically */
+	.check-availability-container button {
+	background-color: white; /* Set the background to white */
+	color: black; /* Set the text color to black */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	transition: background-color 0.2s; /* Smooth background color transition on hover */
+	margin-top: 16px; /* Add space above the button */
+	}
+
+	/* Style for the button on hover */
+	.check-availability-container button:hover {
+	background-color: #f8f8f8; /* Lighten background color on hover */
+	}
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+	.check-availability-container {
+	  width: 90%; /* Make container width responsive */
+	  margin: 20px; /* Adjust margin for small screens */
+	}
+  }
