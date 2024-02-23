@@ -86,7 +86,6 @@ select {
 button,
 input[type="submit"], input[type="reset"] {
   border: 1px solid black; /* Sets a solid black border with 1px thickness for buttons */
-  background-color: #f2f2f2; /* Sets the background color of the button */
   color: black; /* Sets the text color of the button to black */
   padding: 8px 16px; /* Adds padding inside the button to make it larger */
   border-radius: 4px; /* Optional: Adds rounded corners to the button */
