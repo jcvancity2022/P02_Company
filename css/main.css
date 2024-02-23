@@ -161,8 +161,8 @@ label {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 .crisis_card img {
-	width: 30em; /* Makes the image take full width of the card */
-	height: 20em; /* Fixed height for the image */
+	width: 100%; /* Makes the image take full width of the card */
+	height: 20rem; /* Fixed height for the image */
 	object-fit: cover; /* Ensures the image covers the area, might crop it */
   }
   .crisis_card .pane {
