@@ -7,7 +7,6 @@
 		<title>IAT 339 - Product Details</title>
 
 		<link href="css/main.css" rel="stylesheet">
-		<link href="css/style_guide.css" rel="stylesheet">
 		<link href="css/product_details.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
 		<script>
@@ -83,11 +82,11 @@
 					<h3>Check Availability and Book</h3>
 					<form onsubmit="preventFormSubmission(event)" method="post">
 						<label for="checkin-date">Check-in:</label>
-						<input type="date" id="checkin-date" name="checkin" required>
-			
+						<input type="datetime-local" id="checkin-date" name="checkin" required>
+						<br>
 						<label for="checkout-date">Check-out:</label>
-						<input type="date" id="checkout-date" name="checkout" required>
-			
+						<input type="datetime-local" id="checkout-date" name="checkout" required>
+						<br>
 						<!-- More form fields as necessary -->
 			
 						<input type="submit" value="Check Availability">
