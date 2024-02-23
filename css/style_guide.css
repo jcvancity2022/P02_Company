@@ -77,9 +77,11 @@ textarea,
 select {
   border: 1px solid black; /* Sets a solid black border with 1px thickness */
   /* You can add more styles to make the inputs look better */
+  background-color: #f2f2f2; /* Sets the background color of the input fields */
   padding: 8px; /* Adds some space inside the input fields */
   border-radius: 4px; /* Optional: Adds rounded corners to the inputs */
   margin-bottom: 8px; /* Optional: Adds space below the inputs */
+  transition: background-color 0.3s;
 }
 
 /* Style for buttons */
