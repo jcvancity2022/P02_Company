@@ -80,6 +80,7 @@ select {
   padding: 8px; /* Adds some space inside the input fields */
   border-radius: 4px; /* Optional: Adds rounded corners to the inputs */
   margin-bottom: 8px; /* Optional: Adds space below the inputs */
+  transition: background-color 0.3s;
 }
 
 /* Style for buttons */
