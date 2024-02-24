@@ -80,7 +80,7 @@
 				<h3>Check Availability and Book</h3>
 
 				<form onsubmit="preventFormSubmission(event)" method="post">
-					<label for="checkin-date">Check-in:</label>
+					<label>Check-in:</label>
 					<br>
 					<input type="datetime-local" id="checkin-date" name="checkin" required>
 					<br>
@@ -88,37 +88,33 @@
 					<br>
 					<input type="datetime-local" id="checkout-date" name="checkout" required>
 					<br>
-					<!-- More form fields as necessary -->
-		
+					<br>
 					<input type="submit" value="Check Availability">
 				</form>
 				
 				<h2>Leave a Review</h2>
 
 				<form onsubmit="preventFormSubmission(event)" method="post">
-
 					<label>Your Name:</label>
 					<br>
 					<input type="text" name="reviewer_name" required>
-
+					<br>
 					<label>Your Comments:</label>
 					<br>
 					<textarea name="reviewer_comments" required></textarea>
-
-					<div class="form-group">
-						<label for="reviewer-rating">Your Rating:</label>
-						<select id="reviewer-rating" name="reviewer_rating" required>
-							<option value="">Choose a rating</option>
-							<option value="1">1 - Poor</option>
-							<option value="2">2 - Fair</option>
-							<option value="3">3 - Good</option>
-							<option value="4">4 - Very Good</option>
-							<option value="5">5 - Excellent</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Submit Review">
-					</div>
+					<br>
+					<label for="reviewer-rating">Your Rating:</label>
+					<br>
+					<select id="reviewer-rating" name="reviewer_rating" required>
+						<option value="">Choose a rating</option>
+						<option value="1">1 - Poor</option>
+						<option value="2">2 - Fair</option>
+						<option value="3">3 - Good</option>
+						<option value="4">4 - Very Good</option>
+						<option value="5">5 - Excellent</option>
+					</select>
+					<br><br>
+					<input type="submit" value="Submit Review">
 				</form>
 			</div>
 		</div>
