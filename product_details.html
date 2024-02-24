@@ -61,17 +61,67 @@
 						<p class="hotel-rating-number">10/10</p>
 					</div>
 
-					<h3>Customer Reviews</h3>
-					<div class="customer-reviews">
-						<div class="review">
-							<h4>John Doe</h4>
-							<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
-						</div>
-						<div class="review">
-							<h4>Jane Smith</h4>
-							<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
-						</div>
-					</div>
+					<h2>Customer Reviews</h2>
+
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
+					
+					<h4>John Doe</h4>
+					<p>“The hotel is very modern and clean. The staff is very friendly and helpful. The location is perfect, right in the heart of the village. I would definitely stay here again.”</p>
+					
+					<h4>Jane Smith</h4>
+					<p>“The hotel is very modern and clean. The atmosphere is peaceful. I would definitely stay here again.”</p>
 				</div>
 			</div>
 
@@ -92,29 +142,25 @@
 					<input type="submit" value="Check Availability">
 				</form>
 				
-				<h2>Leave a Review</h2>
+				<br>
+				<h3>Leave a Review</h3>
 
 				<form onsubmit="preventFormSubmission(event)" method="post">
 					<label>Your Name:</label>
 					<br>
-					<input type="text" name="reviewer_name" required>
+					<input type="text" required>
+					<br>
+					<label>Your Rating:</label>
+					<br>
+					<label>😟</label>
+					<input type="range" name="rating" min="-128" max="127" step="0.5" />
+					<label>😃</label>
 					<br>
 					<label>Your Comments:</label>
 					<br>
-					<textarea name="reviewer_comments" required></textarea>
-					<br>
-					<label for="reviewer-rating">Your Rating:</label>
-					<br>
-					<select id="reviewer-rating" name="reviewer_rating" required>
-						<option value="">Choose a rating</option>
-						<option value="1">1 - Poor</option>
-						<option value="2">2 - Fair</option>
-						<option value="3">3 - Good</option>
-						<option value="4">4 - Very Good</option>
-						<option value="5">5 - Excellent</option>
-					</select>
+					<textarea name="reviewer_comments" required rows="5" style="resize: none"></textarea>
 					<br><br>
-					<input type="submit" value="Submit Review">
+					<input type="submit">
 				</form>
 				
 				<a href="purchase.html"><button>Purchase</button></a>
