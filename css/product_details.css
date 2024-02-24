@@ -17,6 +17,9 @@
 	/* sticky positioning: https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 */
 	position: sticky;
 	top: 2em;
+
+	overflow: auto;
+	max-height: calc(100vh - 6.5em);
 }
 
 #amenities {
@@ -29,20 +32,43 @@
 	margin: 7px;
 }
 
-#hotel-price {
+#hotel_name {
+	margin-top: -1.7em;
+	margin-bottom: 0.7em;
+	margin-left: 2rem;
+
+	left: 2em;
+	bottom: 3em;
+
+	font-size: 4rem;
+	color: white;
+	text-shadow: 0 0 0.3em black;
+}
+
+#hotel_price {
 	display: inline-block;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-#hotel-rating {
+#hotel_rating {
 	background-color: rgb(255, 105, 105);
 	overflow: hidden;
 }
-#hotel-rating > div {
+#hotel_rating > div {
 	background-color: rgb(123, 255, 123);
 	padding: 0.5em;
 	width: 90%;
+}
+#hotel_reviews {
+	margin-top: 2em;
+}
+
+.comment > h4 {
+	margin-bottom: 0.4em;
+}
+.comment > p {
+	margin-top: 0;
 }
 
 @media (max-width: 70rem) {
