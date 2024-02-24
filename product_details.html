@@ -77,32 +77,34 @@
 
 			<!-- All the usual required payment form fields, such as card info and billing location should be retrieved from the user's account settings -->
 			<div id="checkout" class="glass pane">
-				<div class="check-availability-container">
-					<!-- Availability and booking form -->
-					<h3>Check Availability and Book</h3>
-					<form onsubmit="preventFormSubmission(event)" method="post">
-						<label for="checkin-date">Check-in:</label>
-						<input type="datetime-local" id="checkin-date" name="checkin" required>
-						<br>
-						<label for="checkout-date">Check-out:</label>
-						<input type="datetime-local" id="checkout-date" name="checkout" required>
-						<br>
-						<!-- More form fields as necessary -->
-			
-						<input type="submit" value="Check Availability">
-					</form>	
-				</div>
-				<!-- Review Submission Form -->
-				<h2>Leave a Review</h2>
+				<h3>Check Availability and Book</h3>
+
 				<form onsubmit="preventFormSubmission(event)" method="post">
-					<div class="form-group">
-						<label for="reviewer-name">Your Name:</label>
-						<input type="text" id="reviewer-name" name="reviewer_name" required>
-					</div>
-					<div class="form-group">
-						<label for="reviewer-comments">Your Comments:</label>
-						<textarea id="reviewer-comments" name="reviewer_comments" required></textarea>
-					</div>
+					<label for="checkin-date">Check-in:</label>
+					<br>
+					<input type="datetime-local" id="checkin-date" name="checkin" required>
+					<br>
+					<label for="checkout-date">Check-out:</label>
+					<br>
+					<input type="datetime-local" id="checkout-date" name="checkout" required>
+					<br>
+					<!-- More form fields as necessary -->
+		
+					<input type="submit" value="Check Availability">
+				</form>
+				
+				<h2>Leave a Review</h2>
+
+				<form onsubmit="preventFormSubmission(event)" method="post">
+
+					<label>Your Name:</label>
+					<br>
+					<input type="text" name="reviewer_name" required>
+
+					<label>Your Comments:</label>
+					<br>
+					<textarea name="reviewer_comments" required></textarea>
+
 					<div class="form-group">
 						<label for="reviewer-rating">Your Rating:</label>
 						<select id="reviewer-rating" name="reviewer_rating" required>

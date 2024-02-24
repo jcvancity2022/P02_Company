@@ -18,7 +18,6 @@ textarea,
 select,
 button {
 	/* Neumorphism css: https://neumorphism.io/#e0e0e0 */
-	border: none;
 	box-shadow:  10px 10px 20px #bebebe,
 				-5px -5px 5px #ffffff;
 }
@@ -61,6 +60,10 @@ button {
 	outline: none;
 	padding: 10px;
 	margin: 0px;
+	
+	transition: background-color 0.2s ease-in-out;
+
+	border: solid 1px rgb(100, 100, 100);
 }
 input[type=reset]:hover, 
 input[type=submit]:hover, 
@@ -70,13 +73,20 @@ textarea:hover,
 select:hover,
 button:hover {
 	background-color: rgb(230, 230, 230, 0.4);
-	scale: 1.025;
+	transform: perspective(500px) translateZ(10px);
+}
+input[type=reset]:hover, 
+input[type=submit]:hover, 
+input[type=datetime-local]:hover,
+select:hover,
+button:hover {
+	cursor: pointer;
 }
 /* property selector: https://css-tricks.com/styling-texty-inputs-only/ */
 select:active,
 input[type=reset]:active {
 	background-color: rgb(200, 200, 200, 0.4);
-	scale: 0.95;
+	transform: perspective(500px) translateZ(-10px);
 }
 /* remove focus border: https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
 input[type=text]:focus, 
@@ -85,14 +95,14 @@ input[type=datetime-local]:focus,
 textarea:focus,
 button:focus {
 	background-color: rgb(200, 200, 200, 0.4);
-	scale: 0.975;
+	transform: perspective(500px) translateZ(-10px);
 }
 input[type=text]:active, 
 input[type=submit]:active, 
 input[type=datetime-local]:active,
 textarea:active,
 button:active {
-	scale: 0.95;
+	transform: perspective(500px) translateZ(-20px);
 }
 
 input[type=radio] {
@@ -101,10 +111,10 @@ input[type=radio] {
 }
 input[type=radio]:hover {
 	margin-right: 5px;
-	scale: 1.7;
+	transform: perspective(500px) translateZ(5px);
 }
 input[type=radio]:active {
-	scale: 1.3;
+	transform: perspective(500px) translateZ(-5px);
 }
 
 /* paragraph indent: https://www.w3schools.com/cssref/pr_text_text-indent.php */
@@ -257,35 +267,4 @@ code {
   font-weight: bold;
   color: #4caf50; /* Score colour */
   margin-left: 5px;
-}
-
-/* Style for input fields and text areas */
-input[type="text"],
-input[type="date"],
-textarea,
-select {
-  border: 1px solid black; /* Sets a solid black border with 1px thickness */
-  /* You can add more styles to make the inputs look better */
-  background-color: #f2f2f2; /* Sets the background color of the input fields */
-  padding: 8px; /* Adds some space inside the input fields */
-  border-radius: 4px; /* Optional: Adds rounded corners to the inputs */
-  margin-bottom: 8px; /* Optional: Adds space below the inputs */
-  transition: background-color 0.3s;
-}
-
-/* Style for buttons */
-button,
-input[type="submit"], input[type="reset"] {
-  border: 1px solid black; /* Sets a solid black border with 1px thickness for buttons */
-  color: black; /* Sets the text color of the button to black */
-  padding: 8px 16px; /* Adds padding inside the button to make it larger */
-  border-radius: 4px; /* Optional: Adds rounded corners to the button */
-  cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the button */
-  transition: background-color 0.3s; /* Optional: Adds a transition effect when the button state changes */
-}
-
-/* Optional: Style for hover state of the button */
-button:hover,
-input[type="submit"]:hover {
-  background-color: #f2f2f2; /* Changes the background color when hovering */
 }
