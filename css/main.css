@@ -23,7 +23,7 @@ button {
 }
 .glass {
 	background-color: #e0e0e0;
-	margin: 30px;
+	margin: 2em;
 	border-radius: 10px;
 }
 .pane {
@@ -70,7 +70,7 @@ input[type=range] {
 	padding: 0;
 }
 
-.amenity:hover,
+#amenities > div:hover,
 input[type=reset]:hover, 
 input[type=submit]:hover, 
 input[type=text]:hover, 
