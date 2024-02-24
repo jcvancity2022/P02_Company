@@ -70,6 +70,7 @@ input[type=range] {
 	padding: 0;
 }
 
+.amenity:hover,
 input[type=reset]:hover, 
 input[type=submit]:hover, 
 input[type=text]:hover, 
@@ -219,12 +220,6 @@ label {
 
 code {
 	display: block;
-}
-
-.add_margin {
-	padding: calc(50% - 22rem);
-	padding-top: 10%;
-	padding-bottom: 10%;
 }
 
 .remove_margin_top {

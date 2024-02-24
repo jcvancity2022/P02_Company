@@ -29,6 +29,12 @@
 	margin: 7px;
 }
 
+#hotel-price {
+	display: inline-block;
+	margin: 0;
+	margin-left: 2em;
+}
+
 @media (max-width: 70rem) {
 	#desc_checkout {
 		margin: 3rem;
