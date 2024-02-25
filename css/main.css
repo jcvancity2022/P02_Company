@@ -166,6 +166,12 @@ label {
 	margin-top: 1em;
 }
 
+#title {
+	font-size: 4rem;
+	color: white;
+	text-shadow: 0 0 0.3em black;
+}
+
 .crisis_card {
 	max-width: 40em;
 	overflow: hidden; /* Ensures the content does not spill outside the card */
