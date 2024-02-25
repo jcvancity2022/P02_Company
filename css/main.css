@@ -2,11 +2,15 @@
 /* CSS math functions https://www.w3schools.com/css/css_math_functions.asp */
 body {
 	font-family: Calibri;
+	padding: 0;
 	margin: 0;
 	background-color: #e0e0e0;
 }
 h1, h2, h3, h4, h5, h6, b {
 	font-family: 'Radio Canada', sans-serif;
+}
+img {
+	display: block;
 }
 
 .glass, 
@@ -70,7 +74,6 @@ input[type=range] {
 	padding: 0;
 }
 
-#amenities > div:hover,
 input[type=reset]:hover, 
 input[type=submit]:hover, 
 input[type=text]:hover, 
