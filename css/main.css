@@ -166,11 +166,28 @@ label {
 	margin-top: 1em;
 }
 
-#title {
-	font-size: 4rem;
+.background {
+	position: relative;
+	width: 100%;
+}
+.background > img {
+	width: 100%;
+}
+.background > h1 {
+	font-size: 3rem;
 	color: white;
 	text-shadow: 0 0 0.3em black;
+
+	position: absolute;
+	bottom: 0;
+	left: 1em;
 }
+
+.title {
+	font-size: 2rem;
+	text-align: center;
+}
+
 
 .crisis_card {
 	max-width: 40em;
@@ -179,10 +196,11 @@ label {
 .crisis_card > a > img, .crisis_card > div > a > button {
 	width: 100%;
 }
-.crisis_card > #descrpition {
+.crisis_card > .description {
 	padding: 1em;
 	padding-top: 0;
 }
+
 .remove_margin_top {
 	margin-top: 0;
 }
