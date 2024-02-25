@@ -167,48 +167,35 @@ label {
 }
 
 .crisis_card {
-	width: 40em;
-	height: 60em;
+	max-width: 40em;
 	overflow: hidden; /* Ensures the content does not spill outside the card */
-	display: flex;
-	flex-direction: column;
-	margin: 10px; /* Adds space around the cards */
-	border: 1px solid #ddd; /* Optional: Adds a border around the cards */
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.crisis_card img {
-	width: 100%; /* Makes the image take full width of the card */
-	height: 20rem; /* Fixed height for the image */
-	object-fit: cover; /* Ensures the image covers the area, might crop it */
-  }
-  .crisis_card .pane {
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between; /* Distributes space between elements inside the pane */
-  }
-  
-  /* Add this class to buttons if not already styled */
-  .crisis_card button {
-	cursor: pointer; /* Changes the cursor to indicate it's clickable */
-	padding: 10px 20px;
-	background-color: #004baf; /* Example button color */
-	color: white;
-	border: none;
-	border-radius: 5px; /* Rounded corners for the button */
-	margin-top: auto; /* Pushes the button to the bottom of the card */
-  }
-  
-  /* Additional styling for the hotel-pricing to ensure the text does not overflow */
-  .hotel-pricing .hotel-price {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-  }
 .crisis_card > a > img, .crisis_card > div > a > button {
 	width: 100%;
 }
-
+.crisis_card > #descrpition {
+	padding: 1em;
+	padding-top: 0;
+}
 .remove_margin_top {
 	margin-top: 0;
+}
+
+#amenities {
+	display: flex;
+	flex-wrap: wrap;
+}
+#amenities > div {
+	display: inline-block;
+	padding: 0.5em;
+	margin: 7px;
+}
+
+#hotel_rating {
+	background-color: rgb(255, 105, 105);
+}
+#hotel_rating > div {
+	background-color: rgb(123, 255, 123);
+	padding: 0.5em;
+	width: 90%;
 }

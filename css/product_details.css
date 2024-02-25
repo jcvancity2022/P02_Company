@@ -22,14 +22,8 @@
 	max-height: calc(100vh - 6.5em);
 }
 
-#amenities {
-	display: flex;
-	flex-wrap: wrap;
-}
 #amenities > div {
-	display: inline-block;
 	padding: 0.8em;
-	margin: 7px;
 }
 
 #hotel_name {
@@ -51,14 +45,6 @@
 	margin-bottom: 0;
 }
 
-#hotel_rating {
-	background-color: rgb(255, 105, 105);
-}
-#hotel_rating > div {
-	background-color: rgb(123, 255, 123);
-	padding: 0.5em;
-	width: 90%;
-}
 #hotel_reviews {
 	margin-top: 2em;
 }
