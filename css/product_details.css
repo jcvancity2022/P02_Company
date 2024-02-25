@@ -26,17 +26,10 @@
 	padding: 0.8em;
 }
 
-#hotel_name {
-	margin-top: -2em;
-	margin-bottom: 1em;
-	margin-left: 2rem;
-
-	left: 2em;
-	bottom: 3em;
-
-	font-size: 4rem;
-	color: white;
-	text-shadow: 0 0 0.3em black;
+#title {
+	margin-top: -2.5em;
+	margin-bottom: 1.5em;
+	margin-left: 3.5rem;
 }
 
 #hotel_price {
@@ -54,6 +47,7 @@
 }
 .comment > p {
 	margin-top: 0;
+	text-indent: 0;
 }
 
 @media (max-width: 70rem) {
