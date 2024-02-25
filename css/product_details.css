@@ -16,17 +16,44 @@
 	flex-shrink: 0;
 	/* sticky positioning: https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 */
 	position: sticky;
-	top: 3rem;
+	top: 2em;
+
+	overflow: auto;
+	max-height: calc(100vh - 6.5em);
 }
 
-#amenities {
-	display: flex;
-	flex-wrap: wrap;
-}
-.amenity {
-	display: inline-block;
+#amenities > div {
 	padding: 0.8em;
-	margin: 7px;
+}
+
+#hotel_name {
+	margin-top: -2em;
+	margin-bottom: 1em;
+	margin-left: 2rem;
+
+	left: 2em;
+	bottom: 3em;
+
+	font-size: 4rem;
+	color: white;
+	text-shadow: 0 0 0.3em black;
+}
+
+#hotel_price {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#hotel_reviews {
+	margin-top: 2em;
+}
+
+.comment > h4 {
+	margin-bottom: 0.4em;
+}
+.comment > p {
+	margin-top: 0;
 }
 
 @media (max-width: 70rem) {

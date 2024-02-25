@@ -1,102 +1,18 @@
 
 /* flexbox guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 #swatches {
+    overflow: hidden;
 	border-radius: 0.5rem;
 	display: flex;
 }
-.swatch {
+#swatches > div {
 	flex-grow: 1;
 	padding: 0.5em;
 }
 
+/* important tag: https://www.w3schools.com/css/css_important.asp */
 code {
 	display: block;
-}
-
-.add_margin {
-	padding: calc(50% - 22rem);
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
-
-.hotel-pool, .hotel-hot-tub, .hotel-amenity {
-  display: inline-block;
-  margin-right: 1rem;
-  /* Add icons or background images for pool and hot tub */
-}
-
-.hotel-pricing {
-  display: inline-block;
-
-  margin-right: 8rem;
-  margin-bottom: 1rem;
-}
-
-.hotel-pricing {
-  display: inline-block;
-
-  margin-right: 8rem;
-  margin-bottom: 1rem;
-}
-
-.hotel-price {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0;
-  color: #e90000; /* Price colour */
-}
-
-.hotel-per-night {
-  font-size: 0.9rem;
-  color: #666;
-  margin-left: 5px;
-}
-
-.hotel-rating {
-  display: inline;
-  align-items: center;
-}
-
-.hotel-score {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #4caf50; /* Score colour */
-  margin-right: 5px;
-}
-.hotel-rating-number {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4caf50; /* Score colour */
-  margin-left: 5px;
-}
-
-/* Style for input fields and text areas */
-input[type="text"],
-input[type="date"],
-textarea,
-select {
-  border: 1px solid black; /* Sets a solid black border with 1px thickness */
-  /* You can add more styles to make the inputs look better */
-  background-color: #f2f2f2; /* Sets the background color of the input fields */
-  padding: 8px; /* Adds some space inside the input fields */
-  border-radius: 4px; /* Optional: Adds rounded corners to the inputs */
-  margin-bottom: 8px; /* Optional: Adds space below the inputs */
-  transition: background-color 0.3s;
-}
-
-/* Style for buttons */
-button,
-input[type="submit"], input[type="reset"] {
-  border: 1px solid black; /* Sets a solid black border with 1px thickness for buttons */
-  color: black; /* Sets the text color of the button to black */
-  padding: 8px 16px; /* Adds padding inside the button to make it larger */
-  border-radius: 4px; /* Optional: Adds rounded corners to the button */
-  cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the button */
-  transition: background-color 0.3s; /* Optional: Adds a transition effect when the button state changes */
-}
-
-/* Optional: Style for hover state of the button */
-button:hover,
-input[type="submit"]:hover {
-  background-color: #f2f2f2; /* Changes the background color when hovering */
+    margin-left: 0 !important; 
+    margin-right: 0 !important;
 }
