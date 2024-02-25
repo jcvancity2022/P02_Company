@@ -123,10 +123,10 @@ input[type=radio] {
 }
 input[type=radio]:hover {
 	margin-right: 5px;
-	transform: perspective(500px) translateZ(5px);
+	transform: perspective(500px) translateZ(20px);
 }
 input[type=radio]:active {
-	transform: perspective(500px) translateZ(-5px);
+	transform: perspective(500px) translateZ(-20px);
 }
 
 /* paragraph indent: https://www.w3schools.com/cssref/pr_text_text-indent.php */
@@ -207,22 +207,6 @@ label {
   }
 .crisis_card > a > img, .crisis_card > div > a > button {
 	width: 100%;
-}
-
-/* Style from the style guide*/
-
-/* flexbox guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-#swatches {
-	border-radius: 0.5rem;
-	display: flex;
-}
-.swatch {
-	flex-grow: 1;
-	padding: 0.5em;
-}
-
-code {
-	display: block;
 }
 
 .remove_margin_top {

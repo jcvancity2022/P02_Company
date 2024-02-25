@@ -7,6 +7,7 @@
 		<title>IAT 339 - Style Guide</title>
 
 		<link href="css/main.css" rel="stylesheet">
+		<link href="css/style_guide.css" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
 	</head>
 	<body>
@@ -50,7 +51,7 @@
 			<h3>Colour palettes</h3>
 
 			<div id="swatches">
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(0, 225, 255);
 				">
 					R: 0
@@ -59,7 +60,7 @@
 					<br>
 					B: 255
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(0, 255, 179);
 				">
 					R: 0
@@ -68,7 +69,7 @@
 					<br>
 					B: 179
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(0, 255, 85);
 				">
 					R: 0
@@ -77,7 +78,7 @@
 					<br>
 					B: 85
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(0, 75, 175);
 				">
 					R: 0
@@ -86,7 +87,7 @@
 					<br>
 					B: 175
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(9, 120, 33);
 				">
 					R: 9
@@ -95,7 +96,7 @@
 					<br>
 					B: 33
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(233, 0, 0);
 				">
 					R: 233
@@ -104,7 +105,7 @@
 					<br>
 					B: 0
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(200, 200, 200);
 				">
 					R: 200
@@ -113,7 +114,7 @@
 					<br>
 					B: 200
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(230, 230, 230);
 				">
 					R: 230
@@ -122,7 +123,7 @@
 					<br>
 					B: 230
 				</div>
-				<div class="swatch" style="
+				<div style="
 					background-color: rgb(240, 240, 240);
 				">
 					R: 240
@@ -442,92 +443,6 @@
 					&lt;&#x2F;a&gt;
 				&lt;&#x2F;div&gt;
 			</code>
-		</div>
-		<div class="glass pane">
-			<h3>A payment form (i.e. a collection of text and radio inputs, with labels, and a submit button)</h3>
-
-			<h4>CSS Selectors:</h4>
-			div, h3, .glass, .pane, input[type=radio], input[type=text], input[type=submit], label
-
-			<h4>Rendered Element:</h4>
-
-			<div class="glass pane">
-            <label for="cardName">Name on Card:</label>
-            <input type="text" id="cardName" name="cardName" required>
-
-            <label for="cardNumber">Card Number:</label>
-            <input type="text" id="cardNumber" name="cardNumber" pattern="\d{16}" required>
-
-            <label for="cardExp">Expiry Date:</label>
-            <input type="text" id="cardExp" name="cardExp" placeholder="MM/YY" pattern="\d{2}/\d{2}" required>
-
-            <label for="cardCVC">CVC:</label>
-            <input type="text" id="cardCVC" name="cardCVC" pattern="\d{3}" required>
-          </div>
-          <fieldset class="form-group">
-            <legend>Billing Address</legend>
-            <label for="billingAddress">Address:</label>
-            <input type="text" id="billingAddress" name="billingAddress" required>
-      
-            <label for="billingCity">City:</label>
-            <input type="text" id="billingCity" name="billingCity" required>
-      
-            <label for="billingZip">ZIP Code:</label>
-            <input type="text" id="billingZip" name="billingZip" required>
-          </fieldset>
-      
-          <button>Pay Now</button>
-			<h4>Code:</h4>
-				<code class="glass pane">
-					&lt;div class&#x3D;&quot;glass pane&quot;&gt;
-				&lt;label for&#x3D;&quot;cardName&quot;&gt;Name on Card:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;cardName&quot; name&#x3D;&quot;cardName&quot; required&gt;
-
-				&lt;label for&#x3D;&quot;cardNumber&quot;&gt;Card Number:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;cardNumber&quot; name&#x3D;&quot;cardNumber&quot; pattern&#x3D;&quot;\d{16}&quot; required&gt;
-
-				&lt;label for&#x3D;&quot;cardExp&quot;&gt;Expiry Date:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;cardExp&quot; name&#x3D;&quot;cardExp&quot; placeholder&#x3D;&quot;MM&#x2F;YY&quot; pattern&#x3D;&quot;\d{2}&#x2F;\d{2}&quot; required&gt;
-
-				&lt;label for&#x3D;&quot;cardCVC&quot;&gt;CVC:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;cardCVC&quot; name&#x3D;&quot;cardCVC&quot; pattern&#x3D;&quot;\d{3}&quot; required&gt;
-			&lt;&#x2F;div&gt;
-			&lt;fieldset class&#x3D;&quot;form-group&quot;&gt;
-				&lt;legend&gt;Billing Address&lt;&#x2F;legend&gt;
-				&lt;label for&#x3D;&quot;billingAddress&quot;&gt;Address:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;billingAddress&quot; name&#x3D;&quot;billingAddress&quot; required&gt;
-
-				&lt;label for&#x3D;&quot;billingCity&quot;&gt;City:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;billingCity&quot; name&#x3D;&quot;billingCity&quot; required&gt;
-
-				&lt;label for&#x3D;&quot;billingZip&quot;&gt;ZIP Code:&lt;&#x2F;label&gt;
-				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;billingZip&quot; name&#x3D;&quot;billingZip&quot; required&gt;
-
-			</code>
-			</div>
-		</div>
-		<div class="glass pane">
-			<table id="checkoutCart" class="checkout-table">
-          <tr>
-            <th>Product Name</th>
-            <th>Cost</th>
-          </tr>
-          <tr>
-            <td>Whistler Blackcomb Ski Pass and Hotel</td>
-            <td>$180</td>
-            
-          </tr>
-          <tr>
-            <td>Lake Louise Ski Pass and Hotel</td>
-            <td>$175</td>
-          </tr>
-          <tr>
-            <th scope="row">Total</th>
-            <th>$355</th>
-          </tr>
-        </table>
-        <button>Checkout</button>
-
 		</div>
 
 		<br>

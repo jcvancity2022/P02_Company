@@ -1,0 +1,18 @@
+
+/* flexbox guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+#swatches {
+    overflow: hidden;
+	border-radius: 0.5rem;
+	display: flex;
+}
+#swatches > div {
+	flex-grow: 1;
+	padding: 0.5em;
+}
+
+/* important tag: https://www.w3schools.com/css/css_important.asp */
+code {
+	display: block;
+    margin-left: 0 !important; 
+    margin-right: 0 !important;
+}
