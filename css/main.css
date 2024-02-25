@@ -193,7 +193,7 @@ label {
 	max-width: 40em;
 	overflow: hidden; /* Ensures the content does not spill outside the card */
 }
-.crisis_card > a > img, .crisis_card > div > a > button {
+.crisis_card > img, .crisis_card > a > img, .crisis_card > div > a > button {
 	width: 100%;
 }
 .crisis_card > .description {
@@ -221,5 +221,5 @@ label {
 #hotel_rating > div {
 	background-color: rgb(123, 255, 123);
 	padding: 0.5em;
-	width: 90%;
+	width: 50%;
 }
