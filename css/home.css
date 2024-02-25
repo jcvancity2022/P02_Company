@@ -1,6 +1,20 @@
 
-#title {
-	margin-top: -3em;
-	margin-bottom: 1.5em;
-	margin-left: 3.5rem;
+.cards, .social_cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.cards > div {
+	display: inline-block;
+	flex-basis: 15em;
+	flex-grow: 1;
+	max-width: 30em;
+}
+
+.social_cards > div {
+	display: inline-block;
+}
+.social_cards > div > img {
+	height: 2em;
 }
