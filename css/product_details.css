@@ -49,18 +49,15 @@
 	text-indent: 0;
 }
 
-@media (max-width: 70rem) {
+/* @media (max-width: 70rem) {
 	#desc_checkout {
 		margin: 3rem;
 		flex-direction: column;
-		align-items: stretch;
-	}
-	#desc, #checkout {
-		max-width: 100%; /* Full width for smaller screens */
-		order: 0; /* Reset the order to ensure consistency */
+		align-items: flex-Start;
 	}
 	#checkout {
 		position: static;
-		order: 0;
+		order: -1;
+		height: 30vh;
 	}
-}
+} */
