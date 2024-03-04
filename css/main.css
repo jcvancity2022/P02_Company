@@ -132,7 +132,7 @@ input[type=radio]:active {
 /* paragraph indent: https://www.w3schools.com/cssref/pr_text_text-indent.php */
 p {
 	text-indent: 2em;
-	max-width: 40em;
+	/* max-width: 40em; */
 }
 
 a {
