@@ -208,6 +208,7 @@ label {
 #amenities {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 #amenities > div {
 	display: inline-block;
