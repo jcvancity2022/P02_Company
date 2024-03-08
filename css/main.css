@@ -1,132 +1,15 @@
 
 /* CSS math functions https://www.w3schools.com/css/css_math_functions.asp */
 body {
-	font-family: Calibri;
+	font-family: Calibri, sans-serif;
 	padding: 0;
 	margin: 0;
-	background-color: #e0e0e0;
 }
 h1, h2, h3, h4, h5, h6, b {
-	font-family: 'Radio Canada', sans-serif;
+	font-family: sans-serif;
 }
 img {
 	display: block;
-}
-
-.glass, 
-input[type=reset], 
-input[type=submit], 
-input[type=text], 
-input[type=datetime-local], 
-textarea,
-select,
-button {
-	/* Neumorphism css: https://neumorphism.io/#e0e0e0 */
-	box-shadow:  10px 10px 20px #bebebe,
-				-5px -5px 5px #ffffff;
-}
-.glass {
-	background-color: #e0e0e0;
-	margin: 2em;
-	border-radius: 10px;
-}
-.pane {
-	padding: 20px;
-}
-/* pseudo classes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
-.pane > :first-child {
-	margin-top: 0;
-}
-.pane > :last-child {
-	margin-bottom: 0;
-}
-
-#header {
-	border-radius: 0;
-	margin: 0;
-
-	display: flex;
-	justify-content: space-between;
-}
-#header button {
-	margin: 10px;
-}
-
-input[type=reset], 
-input[type=submit], 
-input[type=text], 
-input[type=datetime-local],
-input[type=range],
-textarea,
-select,
-button {
-	background-color: rgba(240, 240, 240, 0.4);
-	border-radius: 3px;
-	outline: none;
-	padding: 10px;
-	margin: 0px;
-	
-	transition: background-color 0.2s ease-in-out;
-
-	border: solid 1px rgb(100, 100, 100);
-}
-input[type=range] {
-	padding: 0;
-}
-
-input[type=reset]:hover, 
-input[type=submit]:hover, 
-input[type=text]:hover, 
-input[type=datetime-local]:hover,
-input[type=range]:hover,
-textarea:hover,
-select:hover,
-button:hover {
-	background-color: rgb(230, 230, 230, 0.4);
-	transform: perspective(500px) translateZ(10px);
-}
-input[type=reset]:hover, 
-input[type=submit]:hover, 
-input[type=datetime-local]:hover,
-input[type=range]:hover,
-select:hover,
-button:hover {
-	cursor: pointer;
-}
-/* property selector: https://css-tricks.com/styling-texty-inputs-only/ */
-select:active,
-input[type=range]:active,
-input[type=reset]:active {
-	background-color: rgb(200, 200, 200, 0.4);
-	transform: perspective(500px) translateZ(-10px);
-}
-/* remove focus border: https://stackoverflow.com/questions/3397113/how-to-remove-focus-border-outline-around-text-input-boxes-chrome */
-input[type=text]:focus, 
-input[type=submit]:focus, 
-input[type=datetime-local]:focus,
-textarea:focus,
-button:focus {
-	background-color: rgb(200, 200, 200, 0.4);
-	transform: perspective(500px) translateZ(-10px);
-}
-input[type=text]:active, 
-input[type=submit]:active, 
-input[type=datetime-local]:active,
-textarea:active,
-button:active {
-	transform: perspective(500px) translateZ(-20px);
-}
-
-input[type=radio] {
-	margin: 8px;
-	scale: 1.5;
-}
-input[type=radio]:hover {
-	margin-right: 5px;
-	transform: perspective(500px) translateZ(20px);
-}
-input[type=radio]:active {
-	transform: perspective(500px) translateZ(-20px);
 }
 
 /* paragraph indent: https://www.w3schools.com/cssref/pr_text_text-indent.php */
@@ -160,11 +43,7 @@ a > img:active {
 	border-color:rgb(0, 119, 67);
 }
 
-label {
-	display: inline-block;
-	margin: 5px;
-	margin-top: 1em;
-}
+
 
 .background {
 	position: relative;
@@ -176,50 +55,60 @@ label {
 .background > h1 {
 	font-size: 3rem;
 	color: white;
-	text-shadow: 0 0 0.3em black;
+
+	padding: 1em;
+	margin: 0;
 
 	position: absolute;
-	bottom: 0;
-	left: 1em;
+
+	top: 15%;
+	left: 20%;
 }
 
-.title {
-	font-size: 2rem;
-	text-indent: 5rem;;
-}
-
-
-.crisis_card {
-	max-width: 40em;
-	overflow: hidden; /* Ensures the content does not spill outside the card */
-}
-.crisis_card > img, .crisis_card > a > img, .crisis_card > div > a > button {
-	width: 100%;
-}
-.crisis_card > .description {
-	padding: 1em;
-	padding-top: 0;
-}
-
-.remove_margin_top {
-	margin-top: 0;
-}
-
-#amenities {
+.navigation {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
+
+	margin-top: -20px;
+
+	position: sticky;
+	top: 10px;
+	bottom: 10px;
 }
-#amenities > div {
-	display: inline-block;
-	padding: 0.5em;
-	margin: 7px;
+.navigation > nav {
+	background: rgba(255, 255, 255);
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	border-radius: 10px;
+
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.navigation > nav > button {
+	margin: 5px;
+}
+.navigation > nav > h1 {
+	margin: 0px;
+	padding-left: 1em;
+	padding-right: 30px;
 }
 
-#hotel_rating {
-	background-color: rgb(255, 105, 105);
+button {
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	border: none;
+	border-radius: 5px;
+
+	background-color: rgb(242, 242, 242);
+
+	transition: background-color 0.1s ease-in-out;
 }
-#hotel_rating > div {
-	background-color: rgb(123, 255, 123);
-	padding: 0.5em;
-	width: 50%;
+button:hover {
+	background-color: rgb(230, 230, 230);
+}
+button:active {
+	transform: perspective(1000px) translateZ(-40px);
 }
