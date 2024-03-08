@@ -1,0 +1,16 @@
+
+.background > h1 {
+	font-size: 3vw;
+
+	top: 15%;
+	left: 20%;
+}
+
+body > div {
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
