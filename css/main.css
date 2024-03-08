@@ -9,10 +9,12 @@ h1, h2, h3, h4, h5, h6, b {
 	font-family: sans-serif;
 }
 img {
-	display: block;
+	border-radius: 10px;
+}
+img, section {
+	display: inline-block;
 }
 
-/* paragraph indent: https://www.w3schools.com/cssref/pr_text_text-indent.php */
 p {
 	text-indent: 2em;
 	/* max-width: 40em; */
@@ -21,16 +23,13 @@ p {
 a {
 	color:rgb(0, 175, 175);
 }
-/* hover selector: https://www.w3schools.com/cssref/sel_hover.php */
 a:hover {
 	color:rgb(0, 175, 100);
 }
-/* mouse down selector: https://stackoverflow.com/questions/16715274/what-is-the-mouse-down-selector-in-css */
 a:active {
 	color:rgb(0, 119, 67);
 }
 
-/* child selector: https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator */
 a > img {
 	border-style: none none solid none;
 	border-width: 0.4em;
@@ -41,56 +40,6 @@ a > img:hover {
 }
 a > img:active {
 	border-color:rgb(0, 119, 67);
-}
-
-
-
-.background {
-	position: relative;
-	width: 100%;
-}
-.background > img {
-	width: 100%;
-}
-.background > h1 {
-	font-size: 3rem;
-	color: white;
-
-	padding: 1em;
-	margin: 0;
-
-	position: absolute;
-
-	top: 15%;
-	left: 20%;
-}
-
-.navigation {
-	display: flex;
-	justify-content: center;
-
-	margin-top: -20px;
-
-	position: sticky;
-	top: 10px;
-	bottom: 10px;
-}
-.navigation > nav {
-	background: rgba(255, 255, 255);
-	display: flex;
-	align-items: center;
-	padding: 5px;
-	border-radius: 10px;
-
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-.navigation > nav > button {
-	margin: 5px;
-}
-.navigation > nav > h1 {
-	margin: 0px;
-	padding-left: 1em;
-	padding-right: 30px;
 }
 
 button {
@@ -111,4 +60,84 @@ button:hover {
 }
 button:active {
 	transform: perspective(1000px) translateZ(-40px);
+}
+
+
+
+.greyer, footer {
+	background-color: rgb(242, 242, 242);
+	padding: 0.01%;
+}
+
+.background {
+	width: 100%;
+}
+.background > img {
+	border-radius: 0;
+	width: 100%;
+}
+.background > h1 {
+	color: white;
+
+	padding: 1em;
+	margin: 0;
+
+	position: absolute;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+
+	margin-top: -35px;
+
+	position: sticky;
+	top: 20px;
+	bottom: 20px;
+}
+.navigation > nav {
+	background: rgba(255, 255, 255);
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	border-radius: 10px;
+
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.navigation > nav > a {
+	margin: 5px;
+}
+.navigation > nav > h1 {
+	margin: 0px;
+	padding-left: 1em;
+	padding-right: 30px;
+}
+
+.information {
+	max-width: 20em;
+}
+
+.center_div {
+	margin: 5%;
+	display: flex;
+	justify-content: center;
+	gap: 3%;
+}
+.center_div > img {
+	max-width: 40%;
+}
+
+footer {
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer > img {
+	width: 2em;
+	margin-right: 0.5em;
+}
+footer > h4 {
+	display: inline-block;
+	margin-right: 3em;
 }
