@@ -1,16 +1,29 @@
 
-.title {
-  margin-top: 2em;
+.background > h1 {
+	font-size: 3vw;
+
+	top: 20%;
+	left: 20%;
 }
 
-.catalog {
-	display: flex;
-  	flex-wrap: wrap;
-	justify-content: center;
-    align-items: baseline;
+.information > section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.information > section > div {
+  background-color: rgb(242, 242, 242);
+  border-radius: 0.3em;
+  padding: 0.5em;
 }
 
-.catalog > div {
-    flex-basis: 25em;
-    flex-grow: 1;
+.information > div {
+  overflow: hidden;
+  background-color: rgb(255, 147, 147);
+  border-radius: 0.3em;
+  margin-bottom: 1.5em;
+}
+.information > div > div {
+  background-color: rgb(157, 255, 157);
+  padding: 0.3em;
 }

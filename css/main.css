@@ -123,9 +123,6 @@ button:active {
 	justify-content: center;
 	gap: 3%;
 }
-.center_div > img {
-	max-width: 40%;
-}
 
 footer {
 	padding: 1em;
