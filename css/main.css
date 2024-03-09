@@ -43,10 +43,12 @@ a > img:active {
 }
 
 button {
-	padding-top: 0.7em;
-	padding-bottom: 0.7em;
-	padding-left: 1em;
-	padding-right: 1em;
+	font-size: 1em;
+
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
 
 	border: none;
 	border-radius: 5px;
