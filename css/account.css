@@ -1,12 +1,12 @@
 
 .background > h1 {
-	font-size: 3vw;
+	font-size: 3em;
 
-	top: 15%;
+	top: 20%;
 	left: 20%;
 }
 
-body > div {
+#settings {
     padding: 5%;
 
     display: flex;

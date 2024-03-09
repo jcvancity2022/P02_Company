@@ -100,22 +100,27 @@ button:active {
 	top: 20px;
 	bottom: 20px;
 }
-.navigation > nav {
-	background: rgba(255, 255, 255);
-	display: flex;
-	align-items: center;
-	padding: 5px;
+header {
+	background-color: rgba(255, 255, 255);
 	border-radius: 10px;
 
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	align-items: center;
 }
-.navigation > nav > a {
-	margin: 5px;
+header > h2 {
+	display: inline-block;
+	margin: 0;
+	margin-left: 0.6em;
+	margin-right: 0.6em;
 }
-.navigation > nav > h1 {
-	margin: 0px;
-	padding-left: 1em;
-	padding-right: 30px;
+header > nav {
+	display: inline-flex;
+	gap: 10px;
+	margin: 10px;
+}
+header > nav > a {
 }
 
 .information {
