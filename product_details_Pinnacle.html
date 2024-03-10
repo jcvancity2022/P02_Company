@@ -19,10 +19,11 @@
 			<div>
 				<a href="index.html"><button>Home</button></a>
 				<a href="style_guide.html"><button>Style Guide</button></a>
-				<a href="catalog.html"><button>Product Listing Template</button></a>
+				<a href="resorts.html"><button>Resorts</button></a>
+				<a href="events.html"><button>Events</button></a>
 			</div>
 			<a href="account.html"><button>Account</button></a>
-        </div>
+		</div>
 
 		<div class="background">
 			<img src="resources/Pinnacle_Hotel_Whistler.jpg" alt="Pinnacle Hotel Whistler">
@@ -111,7 +112,7 @@
 			<div id="checkout" class="glass pane">
 				<h2>Check Availability and Book</h2>
 
-				<form onsubmit="preventFormSubmission(event)" method="post">
+				<form onsubmit="preventFormSubmission(event)" method="post" action="pinnacle_booking_confirmation.html">
 					<label>Check-in:</label>
 					<br>
 					<input type="datetime-local" id="checkin_date" name="checkin" required>
@@ -128,7 +129,7 @@
 				<br>
 				<h2>Leave a Review</h2>
 
-				<form onsubmit="preventFormSubmission(event)" method="post">
+				<form onsubmit="preventFormSubmission(event)" method="post" action="pinnacle_review_submission.html">
 					<label>Your Name:</label>
 					<br>
 					<input type="text" required>
