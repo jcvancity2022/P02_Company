@@ -7,5 +7,5 @@
 }
 
 .center_div {
-	gap: 5%;
+	flex-wrap: wrap;
 }

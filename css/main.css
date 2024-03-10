@@ -120,12 +120,16 @@ header > nav {
 	margin: 10px;
 }
 
+.title {
+	margin: 5%;
+	text-align: center;
+}
+
 .center_div {
 	margin: 5%;
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
-	gap: 3%;
+	gap: 2em;
 }
 .center_div > section {
 	max-width: 20em;
