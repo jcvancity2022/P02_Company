@@ -19,13 +19,14 @@
 			<div>
 				<a href="index.html"><button>Home</button></a>
 				<a href="style_guide.html"><button>Style Guide</button></a>
-				<a href="catalog.html"><button>Product Listing Template</button></a>
+				<a href="resorts.html"><button>Resorts</button></a>
+				<a href="events.html"><button>Events</button></a>
 			</div>
 			<a href="account.html"><button>Account</button></a>
-        </div>
+		</div>
 
 		<div class="background">
-			<img src="resources/Pangea-Pod-Hotel-1.jpg">
+			<img src="resources/Pangea-Pod-Hotel-1.jpg" alt="Pangea Pod Hotel">
 			<h1 id="title">Pangea Pod Hotel</h1>
 		</div>
 
@@ -113,7 +114,7 @@
 			<div id="checkout" class="glass pane">
 				<h2>Check Availability and Book</h2>
 
-				<form onsubmit="preventFormSubmission(event)" method="post">
+				<form onsubmit="preventFormSubmission(event)" method="post" action="pangea_booking_confirmation.html">
 					<label>Check-in:</label>
 					<br>
 					<input type="datetime-local" id="checkin_date" name="checkin" required>
@@ -124,13 +125,13 @@
 					<br>
 					<label>Availability:</label>
 					<h4 class="remove_margin_top">Please fill in a date</h4>
-					<input type="submit" value="Book!">
+					<a href="pangea_booking_confirmation.html"><input type="submit" value="Book!"></a>
 				</form>
 				
 				<br>
 				<h2>Leave a Review</h2>
 
-				<form onsubmit="preventFormSubmission(event)" method="post">
+				<form onsubmit="preventFormSubmission(event)" method="post" action="pangea_review_submission.html">
 					<label>Your Name:</label>
 					<br>
 					<input type="text" required>
