@@ -1,16 +1,11 @@
 
 .background > h1 {
-	font-size: 3vw;
+	font-size: 3em;
 
-	top: 15%;
+	top: 20%;
 	left: 20%;
 }
 
-body > div {
-    padding: 5%;
-
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
+.center_div {
+	flex-wrap: wrap;
 }

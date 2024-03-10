@@ -1,29 +1,29 @@
 
 .background > h1 {
-	font-size: 3vw;
+	font-size: 3em;
 
 	top: 10%;
 	left: 20%;
 }
 
-.information > section {
+.amenities {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
 }
-.information > section > div {
+.amenities > div {
   background-color: rgb(242, 242, 242);
   border-radius: 0.3em;
   padding: 0.5em;
 }
 
-.information > div {
+.rating {
   overflow: hidden;
   background-color: rgb(255, 147, 147);
   border-radius: 0.3em;
   margin-bottom: 1.5em;
 }
-.information > div > div {
+.rating > div {
   background-color: rgb(157, 255, 157);
   padding: 0.3em;
 }

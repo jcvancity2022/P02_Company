@@ -12,12 +12,11 @@ img {
 	border-radius: 10px;
 }
 img, section {
-	display: inline-block;
+	display: block;
 }
 
 p {
 	text-indent: 2em;
-	/* max-width: 40em; */
 }
 
 a {
@@ -100,46 +99,62 @@ button:active {
 	top: 20px;
 	bottom: 20px;
 }
-.navigation > nav {
-	background: rgba(255, 255, 255);
-	display: flex;
-	align-items: center;
-	padding: 5px;
+header {
+	background-color: rgba(255, 255, 255);
 	border-radius: 10px;
 
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	align-items: center;
 }
-.navigation > nav > a {
-	margin: 5px;
+header > h2 {
+	display: inline-block;
+	margin: 0;
+	margin-left: 0.6em;
+	margin-right: 0.6em;
 }
-.navigation > nav > h1 {
-	margin: 0px;
-	padding-left: 1em;
-	padding-right: 30px;
+header > nav {
+	display: inline-flex;
+	gap: 10px;
+	margin: 10px;
 }
 
-.information {
-	max-width: 20em;
+.title {
+	margin: 5%;
+	text-align: center;
 }
 
 .center_div {
 	margin: 5%;
 	display: flex;
 	justify-content: center;
-	gap: 3%;
+	gap: 2em;
+}
+.center_div > section {
+	max-width: 20em;
 }
 
 footer {
 	padding: 1em;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
-footer > img {
-	width: 2em;
-	margin-right: 0.5em;
+footer > #socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
 }
-footer > h4 {
-	display: inline-block;
-	margin-right: 3em;
+footer > #socials > div {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+footer > #socials > div > img {
+	width: 2em;
+}
+footer > #socials > div > h4 {
+	margin: 0;
 }
