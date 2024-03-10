@@ -12,12 +12,11 @@ img {
 	border-radius: 10px;
 }
 img, section {
-	display: inline-block;
+	display: block;
 }
 
 p {
 	text-indent: 2em;
-	/* max-width: 40em; */
 }
 
 a {
@@ -121,15 +120,15 @@ header > nav {
 	margin: 10px;
 }
 
-.information {
-	max-width: 20em;
-}
-
 .center_div {
 	margin: 5%;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 3%;
+}
+.center_div > section {
+	max-width: 20em;
 }
 
 footer {
