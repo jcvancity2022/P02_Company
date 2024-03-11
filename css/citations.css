@@ -5,3 +5,7 @@
 	top: 9%;
 	left: 10%;
 }
+
+.center_div {
+	flex-wrap: wrap;
+}
