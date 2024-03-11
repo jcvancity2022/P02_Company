@@ -86,7 +86,7 @@ label {
 
 
 
-.greyer, footer {
+.greyer {
 	background-color: rgb(242, 242, 242);
 	padding: 0.01%;
 }
@@ -163,7 +163,7 @@ header > nav {
 	gap: 0.5em;
   }
   .amenities > div {
-	background-color: rgb(242, 242, 242);
+	border: 1px dashed black;
 	border-radius: 0.3em;
 	padding: 0.5em;
   }
@@ -184,6 +184,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
+	background-color: lightgray;
 }
 footer > #socials {
 	display: flex;
@@ -201,4 +203,8 @@ footer > #socials > div > img {
 }
 footer > #socials > div > h4 {
 	margin: 0;
+}
+
+li {
+	margin-bottom: 1em;
 }
