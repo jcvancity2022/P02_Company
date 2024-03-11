@@ -154,6 +154,7 @@ header > nav {
 }
 .center_div > section {
 	max-width: 20em;
+	overflow-wrap: break-word;
 }
 
 .amenities {
