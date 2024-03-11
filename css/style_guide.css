@@ -33,3 +33,16 @@
 	width: 100%;
 	border-radius: 0;
 }
+
+#combined_elements {
+	flex-flow: column nowrap;
+}
+#combined_elements > section {
+	max-width: none;
+}
+
+.rendered_element {
+	border: 1px solid black;
+	border-radius: 1em;
+	padding: 1em;
+}

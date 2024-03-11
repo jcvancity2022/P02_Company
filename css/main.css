@@ -126,7 +126,7 @@ header {
 
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
 
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 }
 header > h2 {
@@ -155,6 +155,28 @@ header > nav {
 .center_div > section {
 	max-width: 20em;
 }
+
+.amenities {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+  }
+  .amenities > div {
+	background-color: rgb(242, 242, 242);
+	border-radius: 0.3em;
+	padding: 0.5em;
+  }
+  
+  .rating {
+	overflow: hidden;
+	background-color: rgb(255, 147, 147);
+	border-radius: 0.3em;
+	margin-bottom: 1.5em;
+  }
+  .rating > div {
+	background-color: rgb(157, 255, 157);
+	padding: 0.3em;
+  }
 
 footer {
 	padding: 1em;
