@@ -123,7 +123,7 @@
 			<div id="checkout" class="glass pane">
 				<h2>Check Availability and Book</h2>
 
-				<form onsubmit="preventFormSubmission(event)" method="post" action="pangea_booking_confirmation.html">
+				<form method="get" action="pangea_booking_confirmation.html">
 					<label>Check-in:</label>
 					<br>
 					<input type="datetime-local" id="checkin_date" name="checkin" required>
@@ -140,7 +140,7 @@
 				<br>
 				<h2>Leave a Review</h2>
 
-				<form onsubmit="preventFormSubmission(event)" method="post" action="pangea_review_submission.html">
+				<form method="get" action="pangea_review_submission.html">
 					<label>Your Name:</label>
 					<br>
 					<input type="text" required>
