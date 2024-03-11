@@ -192,6 +192,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 1em;
 	
 	background-color: lightgray;
 }
@@ -199,7 +200,8 @@ footer > #socials {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 3em;
+	flex-wrap: wrap;
+	gap: 1em 3em;
 }
 footer > #socials > div {
 	display: flex;
@@ -211,6 +213,11 @@ footer > #socials > div > img {
 }
 footer > #socials > div > h4 {
 	margin: 0;
+}
+footer > #meta {
+	flex-shrink: 0;
+	display: flex;
+	gap: 1em;
 }
 
 li {
