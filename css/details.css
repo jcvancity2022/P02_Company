@@ -5,6 +5,7 @@
 	align-items: flex-start;
 	margin: 8%;
 	margin-top: 3%;
+	margin-right: 3%;
 	gap: 8%;
 }
 #desc {
@@ -14,6 +15,10 @@
 #checkout {
 	position: sticky;
 	top: 90px;
+
+	min-width: 250px;
+	max-height: calc(100vh - 130px);
+	overflow: auto;
 }
 
 #price {
