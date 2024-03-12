@@ -15,10 +15,6 @@ img, section {
 	display: block;
 }
 
-p {
-	text-indent: 2em;
-}
-
 a {
 	color:rgb(0, 175, 175);
 }
@@ -59,7 +55,7 @@ textarea {
 	border: none;
 	border-radius: 5px;
 
-	background-color: rgb(242, 242, 242);
+	background-color: rgb(230, 230, 230);
 
 	transition: background-color 0.1s ease-in-out;
 }
@@ -69,13 +65,14 @@ input[type=submit]:hover,
 input[type=text]:hover,
 input[type=datetime-local]:hover,
 textarea:hover {
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(212, 212, 212);
+	cursor: pointer;
 }
 input[type=text]:focus,
 input[type=datetime-local]:focus,
 textarea:focus {
 	outline: none;
-	background-color: rgb(230, 230, 230);
+	background-color: rgb(212, 212, 212);
 
 	transform: perspective(1000px) translateZ(-30px);
 }
@@ -154,15 +151,31 @@ header > nav {
 	text-align: center;
 }
 
-.center_div {
+.center {
 	margin: 8%;
 	display: flex;
 	justify-content: center;
 	gap: 2em;
 }
-.center_div > section {
+.wrap {
+	flex-wrap: wrap;
+}
+.center > div {
 	max-width: 20em;
 	overflow-wrap: break-word;
+}
+.no_max_width {
+	max-width: none !important;
+}
+.center > img {
+	max-width: 40%;
+}
+
+.middle {
+	align-items: center;
+}
+.bottom {
+	align-items: flex-end;
 }
 
 .amenities {
@@ -171,9 +184,9 @@ header > nav {
 	gap: 0.5em;
   }
   .amenities > div {
-	border: 1px dashed black;
+	border: 1px dashed rgb(145, 145, 145);
 	border-radius: 0.3em;
-	padding: 0.5em;
+	padding: 0.3em;
   }
   
   .rating {
@@ -194,7 +207,7 @@ footer {
 	align-items: center;
 	gap: 1em;
 	
-	background-color: lightgray;
+	background-color: rgb(242, 242, 242);
 }
 footer > #socials {
 	display: flex;

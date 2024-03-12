@@ -19,6 +19,24 @@
 #swatches > div {
 	padding: 0.5em;
 }
+#swatch1 {
+	background-color: rgb(255, 255, 255);
+}
+#swatch2 {
+	background-color: rgb(242, 242, 242);
+}
+#swatch3 {
+	background-color: rgb(230, 230, 230);
+}
+#swatch4 {
+	background-color: rgb(212, 212, 212);
+}
+#swatch5 {
+	background-color: rgb(255, 147, 147);
+}
+#swatch6 {
+	background-color: rgb(157, 255, 157);
+}
 
 .center_div {
 	flex-wrap: wrap;
@@ -37,7 +55,7 @@
 #combined_elements {
 	flex-flow: column nowrap;
 }
-#combined_elements > section {
+#combined_elements > div {
 	max-width: none;
 }
 
