@@ -171,6 +171,9 @@ header > nav {
 	max-width: 40%;
 }
 
+.top {
+	align-items: flex-start;
+}
 .middle {
 	align-items: center;
 }
