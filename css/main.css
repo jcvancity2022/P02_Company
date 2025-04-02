@@ -234,13 +234,13 @@ footer > #meta {
 	gap: 1em;
 }
 .footer-icon {
-  max-width: 1.05em;
+  max-width: .95em;
   height: auto;
   margin-right: 0.9em;
 }
 #socials h4 {
   display: inline;
-  margin-left: 0.5em;
+  margin-left: 0.15em;
   font-size: 1rem;
   vertical-align: middle;
 }
